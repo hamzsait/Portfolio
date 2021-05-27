@@ -1,10 +1,10 @@
 import { Nav } from 'react-bootstrap'
-import React from 'react'
+import { Component } from 'react'
 import '../css/Nav.css'
 
 
 
-class Navigation extends React.Component {
+class Navigation extends Component {
 
     render() {
         return (
