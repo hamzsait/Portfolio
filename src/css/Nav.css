@@ -9,5 +9,29 @@
 }
 
 .nav-link:hover{
-    color:rgb(0, 110, 255) !important;
+    color:rgb(61, 126, 212) !important;
+}
+
+.linered:hover{
+    color:rgb(255, 0, 0) !important;
+}
+
+.linegreen:hover{
+    color:rgb(0, 255, 0) !important;
+}
+
+.lineblue:hover{
+    color:rgb(61, 126, 212) !important;
+}
+
+.setRed{
+    color:rgb(255, 0, 0) !important;
+}
+
+.setGreen{
+    color:rgb(0, 255, 0) !important;
+}
+
+.setBlue{
+    color:rgb(61, 126, 212) !important;
 }
