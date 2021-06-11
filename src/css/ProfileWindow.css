@@ -1,3 +1,11 @@
 #jumbotron{
    display:flex;
 }
+
+#profilePhoto{
+   margin: 10px;
+}
+
+#profileText{
+   margin: 10px;
+}
