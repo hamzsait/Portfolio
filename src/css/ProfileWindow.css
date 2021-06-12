@@ -1,5 +1,10 @@
 #jumbotron{
    display:flex;
+   margin:50px;
+   border-radius: 20px;
+   background: #ffffff;
+   box-shadow: inset 31px 31px 62px #b8b8b8,
+               inset -31px -31px 62px #ffffff;
 }
 
 #profilePhoto{
@@ -8,4 +13,5 @@
 
 #profileText{
    margin: 10px;
+   color: black;
 }
