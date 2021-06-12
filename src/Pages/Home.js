@@ -7,7 +7,6 @@ function Home() {
         <div>
             <Nav />
             <ProfileWindow />
-            <h1> Home </h1>
         </div>
     )
 }
