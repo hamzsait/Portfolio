@@ -37,7 +37,7 @@ function Navigation() {
 
         return (
             <div>
-                <Navbar id="navbar" bg="dark" variant="dark">
+                <Navbar id="navbar" bg="light" variant="dark">
                     <Nav className="mr-auto">
                         <Nav.Link href="/home">Home</Nav.Link>
                         <h1 id = 'lineblue' onMouseOver={() => alertblue()} className ='nav-link lineblue'>|</h1>
