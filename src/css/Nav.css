@@ -1,16 +1,18 @@
 #navbar{
-    background-color: rgb(248, 150, 70);
-    font-size: 35px;
-    padding: 10px;
-    font-family:Arial, Helvetica, sans-serif
+   font-size: 35px;
+   background-color: #262627;
+   border-radius: 0px;
+   background: #ffffff;
+   box-shadow: inset 31px 31px 62px #b8b8b8,
+            inset -31px -31px 62px #ffffff;
 }
 
 .nav-link{
-    color:white !important;
+    color:black!important;
 }
 
 #rolling_text{
-    color:white !important;
+    color:black !important;
     margin-left: 350px;
     font-size: 35px;
     padding: 10px;
@@ -21,11 +23,11 @@
 }
 
 .linegreen:hover{
-    color:rgb(0, 255, 0) !important;
+    color:rgb(78, 241, 113) !important;
 }
 
 .lineblue:hover{
-    color:rgb(61, 126, 212) !important;
+    color:rgb(0, 80, 253) !important;
 }
 
 .setRed{
@@ -33,9 +35,9 @@
 }
 
 .setGreen{
-    color:rgb(0, 255, 0) !important;
+    color:rgb(78, 241, 113) !important;
 }
 
 .setBlue{
-    color:rgb(61, 126, 212) !important;
+    color:rgb(0, 80, 253) !important;
 }
