@@ -1,6 +1,7 @@
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import { Component } from 'react'
+import {useEffect, useState } from 'react'
+import TextTransition, { presets } from "react-text-transition";
 import '../css/Nav.css'
 
 function alertblue(){
@@ -15,9 +16,25 @@ function alertgreen(){
     document.getElementById("linegreen").classList.add('setGreen');
 }
 
-class Navigation extends Component {
+function Navigation() {
+
+    const rolling_text = [
+        "Data Engineering",
+        "Web Development",
+        "Backend Engineering",
+        "Database Administration"
+    ];
     
-    render() {
+    const [index, setIndex] = useState(0);
+      
+    useEffect(() => {
+        const intervalId = setInterval(() =>
+        setIndex(index => index + 1),
+        5000 // every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+    }, []);
+
         return (
             <div>
                 <Navbar id="navbar" bg="dark" variant="dark">
@@ -29,11 +46,17 @@ class Navigation extends Component {
                         <Nav.Link className = 'linegreen' id = 'greenText' href="/about">About</Nav.Link>
                         <h1 id = 'linered' onMouseOver={() => alertred()} className ='nav-link linered'>|</h1>
                         <Nav.Link id = 'redText' className = 'linered' href="/contact">Contact</Nav.Link>
+                        <h1 id = 'rolling_text'>
+                        <TextTransition 
+                            text={ rolling_text[index % rolling_text.length] }
+                            springConfig={ presets.wobbly }
+                            noOverflow = {false}
+                        />
+                        </h1>
                     </Nav>
                 </Navbar>
             </div>
         )
-    }
 }
 
 export default Navigation
