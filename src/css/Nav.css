@@ -13,9 +13,10 @@
 
 #rolling_text{
     color:black !important;
-    margin-left: 350px;
+    margin-left: 200px;
     font-size: 35px;
     padding: 10px;
+    text-decoration: underline;
 }
 
 .linered:hover{

@@ -12,8 +12,7 @@ function ProfileWindow(){
                     <div id = 'profileText'>
                         <h1>Hamza Sait</h1>
                         <p>
-                            This is a simple hero unit, a simple jumbotron-style component for calling
-                            extra attention to featured content or information.
+                            Full Stack Web Developer 
                         </p>
                     </div>
                 </Jumbotron>
