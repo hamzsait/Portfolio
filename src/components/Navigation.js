@@ -1,8 +1,10 @@
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import { House } from 'react-bootstrap-icons'
 import {useEffect, useState } from 'react'
 import TextTransition, { presets } from "react-text-transition";
 import '../css/Nav.css'
+import '../css/HomeIcon.css'
 
 function alertblue(){
     document.getElementById("lineblue").classList.add('setBlue');
@@ -14,6 +16,14 @@ function alertred(){
 
 function alertgreen(){
     document.getElementById("linegreen").classList.add('setGreen');
+}
+
+function hoverWords(internal){
+    console.log(internal)
+}
+
+function hoverHelper(){
+    return document.getElementById("rolling_text").innerText
 }
 
 function Navigation() {
@@ -30,7 +40,7 @@ function Navigation() {
     useEffect(() => {
         const intervalId = setInterval(() =>
         setIndex(index => index + 1),
-        5000 // every 3 seconds
+        5000 // change word every 5 seconds
         );
         return () => clearTimeout(intervalId);
     }, []);
@@ -46,14 +56,19 @@ function Navigation() {
                         <Nav.Link className = 'linegreen' id = 'greenText' href="/about">About</Nav.Link>
                         <h1 id = 'linered' onMouseOver={() => alertred()} className ='nav-link linered'>|</h1>
                         <Nav.Link id = 'redText' className = 'linered' href="/contact">Contact</Nav.Link>
-                        <h1 id = 'rolling_text'>
-                        <TextTransition 
-                            text={ rolling_text[index % rolling_text.length] }
-                            springConfig={ presets.wobbly }
-                            noOverflow = {false}
-                        />
+                        <h1 onMouseOver = {() => hoverWords(hoverHelper())} id = 'rolling_text'>
+                        <a href ="/home">
+                            <TextTransition 
+                                text={ rolling_text[index % rolling_text.length] }
+                                springConfig={ presets.wobbly }
+                                noOverflow = {false}
+                            />
+                        </a>
                         </h1>
                     </Nav>
+                    <div id = 'icon'>
+                            <House/>
+                    </div>
                 </Navbar>
             </div>
         )
