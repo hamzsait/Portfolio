@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import { House } from 'react-bootstrap-icons'
+import { Github } from 'react-bootstrap-icons'
 import {useEffect, useState } from 'react'
 import TextTransition, { presets } from "react-text-transition";
 import '../css/Nav.css'
@@ -57,7 +57,7 @@ function Navigation() {
                         <h1 id = 'linered' onMouseOver={() => alertred()} className ='nav-link linered'>|</h1>
                         <Nav.Link id = 'redText' className = 'linered' href="/contact">Contact</Nav.Link>
                         <h1 onMouseOver = {() => hoverWords(hoverHelper())} id = 'rolling_text'>
-                        <a href ="/home">
+                        <a id = 'rolling_text' href ="/home">
                             <TextTransition 
                                 text={ rolling_text[index % rolling_text.length] }
                                 springConfig={ presets.wobbly }
@@ -66,9 +66,9 @@ function Navigation() {
                         </a>
                         </h1>
                     </Nav>
-                    <div id = 'icon'>
-                            <House/>
-                    </div>
+                    <a href = 'https://github.com/hamzsait' id = 'icon'>
+                            <Github/>
+                    </a>
                 </Navbar>
             </div>
         )
