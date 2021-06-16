@@ -1,3 +1,7 @@
+a{
+    color:black !important;
+}
+
 #navbar{
    font-size: 35px;
    background-color: #262627;
@@ -12,7 +16,6 @@
 }
 
 #rolling_text{
-    color:black !important;
     margin-left: 200px;
     font-size: 35px;
     padding: 10px;
