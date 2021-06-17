@@ -6,6 +6,7 @@ import TextTransition, { presets } from "react-text-transition";
 import '../css/Nav.css'
 import '../css/HomeIcon.css'
 
+
 function alertblue(){
     document.getElementById("lineblue").classList.add('setBlue');
 }
