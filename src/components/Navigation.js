@@ -19,14 +19,6 @@ function alertgreen(){
     document.getElementById("linegreen").classList.add('setGreen');
 }
 
-function hoverWords(internal){
-    console.log(internal)
-}
-
-function hoverHelper(){
-    return document.getElementById("rolling_text").innerText
-}
-
 function Navigation() {
 
     const rolling_text = [
@@ -57,21 +49,13 @@ function Navigation() {
                         <Nav.Link className = 'linegreen' id = 'greenText' href="/about">About</Nav.Link>
                         <h1 id = 'linered' onMouseOver={() => alertred()} className ='nav-link linered'>|</h1>
                         <Nav.Link id = 'redText' className = 'linered' href="/contact">Contact</Nav.Link>
-                        <h1 onMouseOver = {() => hoverWords(hoverHelper())} id = 'rolling_text'>
-                        <a id = 'rolling_text' href ="/home">
-                            <TextTransition 
-                                text={ rolling_text[index % rolling_text.length] }
-                                springConfig={ presets.wobbly }
-                                noOverflow = {false}
-                            />
-                        </a>
-                        </h1>
                     </Nav>
                     <a href = 'https://github.com/hamzsait' id = 'icon'>
                             <Github/>
                     </a>
                 </Navbar>
             </div>
+            
         )
 }
 
