@@ -1,10 +1,16 @@
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import '../css/ProfileWindow.css'
 
+
+function borderChange(){
+    document.getElementById("jumbotron").classList.add('setBorder')
+}
+
+
 function ProfileWindow(){
 
         return (
-            <div id="profileWindow" >
+            <div onMouseHover={() => borderChange()} id="profileWindow" >
                 <Jumbotron id = "jumbotron">
                     <div id = 'profilePhoto'>
                         <img alt = 'profilePhoto' src="../images/profilePhoto.jpeg"></img>
