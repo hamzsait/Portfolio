@@ -1,8 +1,6 @@
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { Github } from 'react-bootstrap-icons'
-import {useEffect, useState } from 'react'
-import TextTransition, { presets } from "react-text-transition";
 import '../css/Nav.css'
 import '../css/HomeIcon.css'
 
@@ -20,23 +18,6 @@ function alertgreen(){
 }
 
 function Navigation() {
-
-    const rolling_text = [
-        "Data Engineering",
-        "Web Development",
-        "Backend Engineering",
-        "Database Administration"
-    ];
-    
-    const [index, setIndex] = useState(0);
-      
-    useEffect(() => {
-        const intervalId = setInterval(() =>
-        setIndex(index => index + 1),
-        5000 // change word every 5 seconds
-        );
-        return () => clearTimeout(intervalId);
-    }, []);
 
         return (
             <div>
