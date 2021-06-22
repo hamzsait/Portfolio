@@ -15,18 +15,12 @@ a{
     color:black!important;
 }
 
-#rolling_text {
-    margin-left: 200px;
-    padding: 10px; 
-    text-decoration: underline;
-}
-
 .linered:hover{
     color:rgb(255, 0, 0) !important;
 }
 
 .linegreen:hover{
-    color:rgb(78, 241, 113) !important;
+    color:rgb(46, 200, 25) !important;
 }
 
 .lineblue:hover{
@@ -38,7 +32,7 @@ a{
 }
 
 .setGreen{
-    color:rgb(78, 241, 113) !important;
+    color:rgb(46, 200, 25) !important;
 }
 
 .setBlue{
