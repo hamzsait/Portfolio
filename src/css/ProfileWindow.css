@@ -16,6 +16,7 @@
    color: black;
 }
 
-.setBorder{
-   background-color:aqua;
+.hoverJumbo{
+   color: blue;
+   background: blue;
 }
