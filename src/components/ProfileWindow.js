@@ -3,8 +3,9 @@ import '../css/ProfileWindow.css'
 
 
 function hoverJumbo(){
-    document.getElementById("profileText").classList.add('hoverJumbo')
-    console.log("yooo")
+    document.getElementById("jumbotron").classList.add('hoverJumbo')
+    document.getElementById("profilePhoto").classList.add('hoverPhoto')
+    document.getElementById("profileName").classList.add("hoverProfileName")
 }
 
 
@@ -17,8 +18,8 @@ function ProfileWindow(){
                         <img alt = 'profilePhoto' src="../images/profilePhoto.jpeg"></img>
                     </div>
                     <div id = 'profileText'>
-                        <h1>Hamza Sait</h1>
-                        <p >
+                        <h1 id = 'profileName'>Hamza Sait</h1>
+                        <p>
                                 Full Stack Web Developer and Data Engineer based in Austin, Texas focused on politics, policy and society.
                             The majority of my work revolves around civic tech and how to improve society through software solutions. 
                         </p>
