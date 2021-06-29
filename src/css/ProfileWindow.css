@@ -17,6 +17,14 @@
 }
 
 .hoverJumbo{
-   color: blue;
-   background: blue;
+   border: 5px solid purple; 
+}
+
+.hoverPhoto{
+   border: 5px solid;
+}
+
+.hoverProfileName{
+   text-decoration: underline;
+   font-size: 45px;
 }
